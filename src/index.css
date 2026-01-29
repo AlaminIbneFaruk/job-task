@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+
+  /* Deep navy bases */
+  --color-base-100: oklch(0.281 0.0924 268.13); /* main background */
+  --color-base-200: oklch(0.2338 0.0648 268.37); /* cards */
+  --color-base-300: oklch(26% 0.04 240); /* elevated */
+  --color-base-content: oklch(92% 0.02 240);
+
+  /* Neon primary (blue) */
+  --color-primary: oklch(65% 0.25 250);
+  --color-primary-content: oklch(98% 0.01 250);
+
+  /* Secondary (cyan/teal) */
+  --color-secondary: oklch(70% 0.22 200);
+  --color-secondary-content: oklch(98% 0.01 200);
+
+  /* Accent (green-ish neon) */
+  --color-accent: oklch(68% 0.25 160);
+  --color-accent-content: oklch(98% 0.01 160);
+
+  /* Neutral (borders, muted UI) */
+  --color-neutral: oklch(35% 0.04 240);
+  --color-neutral-content: oklch(90% 0.02 240);
+
+  /* Status colors */
+  --color-info: oklch(72% 0.18 220);
+  --color-info-content: oklch(15% 0.02 220);
+
+  --color-success: oklch(70% 0.22 145);
+  --color-success-content: oklch(15% 0.02 145);
+
+  --color-warning: oklch(80% 0.22 85);
+  --color-warning-content: oklch(20% 0.05 85);
+
+  --color-error: oklch(68% 0.28 30);
+  --color-error-content: oklch(98% 0.01 30);
+
+  /* Radius – SaaS style */
+  --radius-selector: 0.75rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+
+  /* Sizing */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* Borders */
+  --border: 1px;
+
+  /* Effects */
+  --depth: 1;
+  --noise: 0;
+}
