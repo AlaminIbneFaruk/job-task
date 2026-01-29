@@ -1,16 +1,119 @@
-# React + Vite
+# AI Call Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, dark-themed admin dashboard built with **React**, **Tailwind CSS**, and **DaisyUI**.
+Designed to monitor call activity, AI-handled calls, repair requests, and operational trends with a clean SaaS-style UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+<img href>
+* **Stat Cards**
 
-## React Compiler
+  * Key metrics (Total Calls, AI Handled Calls, Missed Calls, etc.)
+  * Trend indicators with success and error states
+  * Gradient icon badges using `react-icons`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Call Trends Chart**
 
-## Expanding the ESLint configuration
+  * Visual call history overview
+  * Blue to transparent gradient styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Recent Activity**
+
+  * Timeline-based activity feed
+  * Status indicators using colored dots:
+
+    * Green: Success
+    * Yellow: Warning
+    * Red: Error
+  * Timestamp displayed under each activity
+
+* **Top Repair Requests**
+
+  * Ranked list of most frequent repair issues
+  * Linear gradient progress bars (blue to light blue)
+  * Quick visual comparison of request volume
+
+* **Pagination**
+
+  * Center-aligned layout
+  * Subtle page buttons
+  * Condensed format: `1–5 … last`
+  * Previous and Next navigation
+
+---
+
+## Tech Stack
+
+* React (Functional Components)
+* Tailwind CSS
+* DaisyUI
+* React Icons
+* Chart library (optional, for trends visualization)
+
+---
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── StatCard.jsx
+│   ├── RecentActivity.jsx
+│   ├── TopRepairRequests.jsx
+│   ├── CallTrendsChart.jsx
+│   └── Pagination.jsx
+├── pages/
+│   └── Dashboard.jsx
+└── App.jsx
+```
+
+---
+
+## Getting Started
+
+1. Clone the repository
+
+   ```
+   git clone <repository-url>
+   ```
+
+2. Install dependencies
+
+   ```
+   npm install
+   ```
+
+3. Start the development server
+
+   ```
+   npm run dev
+   ```
+
+---
+
+## Design Principles
+
+* Signal over noise
+* Subtle visual hierarchy
+* Calm, readable dark UI
+* Components built for scalability and real data
+
+This dashboard focuses on clarity, usability, and operational awareness.
+
+---
+
+## Future Enhancements
+
+* Live activity updates
+* Animated progress indicators
+* Dynamic pagination logic
+* API integration
+* Role-based dashboard views
+
+---
+
+## License
+
+This project is intended for learning and internal use.
+You are free to modify and extend it.

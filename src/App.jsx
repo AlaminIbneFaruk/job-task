@@ -3,6 +3,7 @@ import Dashboard from "./Dashboard/Dashboard";
 import CallLogs from "./CallLogs/CallLogs";
 import Appointments from "./Appointments/Appointments";
 import Settings from "./Settings/Settings";
+import { BrowserRouter } from "react-router";
 
 export default function App() {
   return (
