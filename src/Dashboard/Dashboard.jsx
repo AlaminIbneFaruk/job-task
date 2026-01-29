@@ -7,7 +7,9 @@ import {
   FiRepeat,
 } from "react-icons/fi";
 import StatCard from "../stats/StatCard";
-
+import CallTrendsChart from "./charts/CallTrendsChart"
+import RecentActivity from "./RecentActivity";
+import TopRepairRequests from "./TopRepairRequests"
 const Dashboard = () => {
   return (
     <div className="space-y-6">

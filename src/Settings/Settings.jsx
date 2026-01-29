@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ProfileRow from "./ProfileRow";
 
 const Settings = () => {
   const [tab, setTab] = useState("profile");

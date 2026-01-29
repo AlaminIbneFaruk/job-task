@@ -1,4 +1,5 @@
-import { FiHome, FiPhone, FiCalendar, FiSettings } from "react-icons/fi";
+import { FiHome, FiPhone, FiCalendar, FiSettings, FiLogOut } from "react-icons/fi";
+import { NavLink } from "react-router";
 
 export default function Sidebar() {
   return (
